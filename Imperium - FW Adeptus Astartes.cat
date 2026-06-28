@@ -9315,7 +9315,12 @@
         </entryLink>
         <entryLink import="true" name="Warlord" hidden="false" id="223c-9ba8-eb8b-f594" type="selectionEntry" targetId="ee33-18fd-7317-1171"/>
         <entryLink import="true" name="Warlord Traits" hidden="false" id="2102-30d8-7451-3143" type="selectionEntryGroup" targetId="f000-b6a8-62f1-ebcc"/>
-        <entryLink import="true" name="Combi-plasma" hidden="false" id="a913-b278-213c-40ff" type="selectionEntry" targetId="fdce-cdf7-21a9-f9ac"/>
+        <entryLink import="true" name="Combi-plasma" hidden="false" id="a913-b278-213c-40ff" type="selectionEntry" targetId="fdce-cdf7-21a9-f9ac">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de9a-f65c-fd40-169b" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff5e-6cfc-6ff9-f43f" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e3f6-50b4-f9a1-c0ee" includeChildSelections="false"/>
@@ -9326,6 +9331,7 @@
         <infoLink name="Great King of the Moon Lords" id="97b2-3cde-9003-2cb4" hidden="false" type="profile" targetId="4253-d52b-1cce-b6cb"/>
         <infoLink name="Talons of the Phoenix" id="a1c2-eaf6-7a69-2ec1" hidden="false" type="profile" targetId="1b4d-26c7-bbe0-b7fc"/>
         <infoLink name="Teleport Strike" id="6561-5a8c-e373-b311" hidden="false" type="profile" targetId="ddf2-4f55-c7b0-c210"/>
+        <infoLink name="Angels of Death" id="1202-1d97-8997-ec53" hidden="false" type="rule" targetId="01a4-bec8-b573-fde7"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" id="6e63-f9a1-5e61-8285" primary="true" name="HQ"/>
