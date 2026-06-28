@@ -1,4 +1,4 @@
-Warhammer 40,000: 8th Edition
+Warhammer 40,000: 8th Edition: The Castigation of Leodrenn
 ==================
 
 [![GitHub release](https://img.shields.io/github/release/BSData/wh40k-8th-edition.svg?style=flat-square)](https://github.com/BSData/wh40k-8th-edition/releases/latest)
