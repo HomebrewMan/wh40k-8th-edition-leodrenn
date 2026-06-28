@@ -139,8 +139,8 @@
     <categoryEntry id="d743-4a7d-abd9-9018" name="&lt;Chapter&gt;" hidden="false"/>
     <categoryEntry id="2f2f-03e8-ef0f-150c" name="Relic Sicaran Arcus Strike Tank" hidden="false"/>
     <categoryEntry id="e6f5-3320-3a2a-15f5" name="Termite Assault Drill" hidden="false"/>
-    <categoryEntry name="Selenarchs" id="20fc-e9d1-79b1-c62a" hidden="false"/>
-    <categoryEntry name="Lord Commander Lavrentios" id="0cbc-6d9d-485b-ede7" hidden="false" page=""/>
+    <categoryEntry name="Lord Commander Lavrentios" id="2ae3-377d-74f4-fd96" hidden="false"/>
+    <categoryEntry name="Selenarchs" id="3e2e-6285-00ae-c65a" hidden="false" page=""/>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry id="b048-66f2-3f07-e5ec" name="Deimos Pattern Relic Predator" publicationId="0cc2-3545-pubN96526" page="7" hidden="false" collective="false" import="true" type="model">
@@ -763,13 +763,13 @@
         <categoryLink id="8dae-8a27-9c35-a1ad" name="HQ" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="2ef7-60d1-615c-e86b" name="Black Spear" hidden="false" collective="false" import="true" targetId="8747-fa9a-b5df-c401" type="selectionEntry">
+        <entryLink id="2ef7-60d1-615c-e86b" name="Black Spear" hidden="false" collective="false" import="true" targetId="8747-fa9a-b5df-c401" type="selectionEntry" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14d9-dcfd-059f-1c5b" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e659-9743-6a13-956b" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="9900-9a5e-071a-7f3a" name="Black Spear lasbeam" hidden="false" collective="false" import="true" targetId="3b02-66f2-c82a-508d" type="selectionEntry">
+        <entryLink id="9900-9a5e-071a-7f3a" name="Black Spear lasbeam" hidden="false" collective="false" import="true" targetId="3b02-66f2-c82a-508d" type="selectionEntry" sortIndex="2">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a6b-9e75-8625-17de" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c052-7f2c-bec9-91b0" type="min"/>
@@ -1051,7 +1051,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="58d9-7966-fd34-79da" type="equalTo"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="58d9-7966-fd34-79da" type="equalTo" childName="Marines Errant"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1863,7 +1863,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7aea-4e2f-b190-1141" type="equalTo"/>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="51aa-c313-24ec-1d50" type="equalTo" childName="Star Phantoms"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4365,7 +4365,7 @@
     </selectionEntry>
     <selectionEntry id="adf8-b3eb-91cf-fd5c" name="Hunger" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="aae7-0a81-ebaf-b3e6" name="Aegisthus" hidden="false" targetId="86fb-2d59-0dfd-ad91" type="profile"/>
+        <infoLink id="aae7-0a81-ebaf-b3e6" name="Hunger" hidden="false" targetId="86fb-2d59-0dfd-ad91" type="profile"/>
       </infoLinks>
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -9300,102 +9300,54 @@
         <cost name="pts" typeId="points" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Servo harness" hidden="false" id="4118-f3f5-9b6c-0d05" collective="false">
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="af10-feea-7c36-10ef" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd2a-ac82-265c-9f6e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-      </constraints>
+    <selectionEntry type="upgrade" import="true" name="Aegisthus" hidden="false" id="8e54-a61c-8b52-ee54">
+      <infoLinks>
+        <infoLink name="Aegisthus " id="d90a-7d30-e8f6-8779" hidden="false" type="profile" targetId="7cb2-221a-1eeb-dc14"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lord Commander Lavrentios" hidden="false" id="1b1b-5caa-a5aa-8fcb">
       <entryLinks>
-        <entryLink import="true" name="Flamer" hidden="false" id="f91c-cf0a-be01-d8a9" collective="false" targetId="3612-d383-f67d-b269" type="selectionEntry">
+        <entryLink import="true" name="Aegisthus" hidden="false" id="044b-1c80-270a-0c6a" type="selectionEntry" targetId="8e54-a61c-8b52-ee54">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db57-799c-4892-faba" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="564a-e712-ad19-2343" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80d2-d466-1e8f-d4c1" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="40aa-1e27-4817-2f01" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Masterwork plasma cutter" hidden="false" id="2f90-cbe9-9dd0-d072" collective="false" targetId="1040-3a30-e188-17a6" type="selectionEntry">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a13b-5d78-90db-8db0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aa6f-fe86-0e6d-5cbc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Servo-arm" hidden="false" id="5811-bcd5-1333-d6ef" collective="false" targetId="1264-05d2-7dd2-c7b6" type="selectionEntry">
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0482-167a-950d-3f78" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1cc7-0dbc-bc40-bb90" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
+        <entryLink import="true" name="Warlord" hidden="false" id="223c-9ba8-eb8b-f594" type="selectionEntry" targetId="ee33-18fd-7317-1171"/>
+        <entryLink import="true" name="Warlord Traits" hidden="false" id="2102-30d8-7451-3143" type="selectionEntryGroup" targetId="f000-b6a8-62f1-ebcc"/>
+        <entryLink import="true" name="Combi-plasma" hidden="false" id="a913-b278-213c-40ff" type="selectionEntry" targetId="fdce-cdf7-21a9-f9ac"/>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e3f6-50b4-f9a1-c0ee" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Chapter Master (Selenarchs)" id="2c5b-4102-01de-173a" hidden="false" type="profile" targetId="2ca2-7263-174b-a42d"/>
+        <infoLink name="Iron Halo" id="0738-856d-073d-9411" hidden="false" type="profile" targetId="588f-5e6f-ec33-e96e"/>
+        <infoLink name="Great King of the Moon Lords" id="97b2-3cde-9003-2cb4" hidden="false" type="profile" targetId="4253-d52b-1cce-b6cb"/>
+        <infoLink name="Talons of the Phoenix" id="a1c2-eaf6-7a69-2ec1" hidden="false" type="profile" targetId="1b4d-26c7-bbe0-b7fc"/>
+        <infoLink name="Teleport Strike" id="6561-5a8c-e373-b311" hidden="false" type="profile" targetId="ddf2-4f55-c7b0-c210"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" id="6e63-f9a1-5e61-8285" primary="true" name="HQ"/>
+        <categoryLink targetId="3e2e-6285-00ae-c65a" id="bf8e-aa05-81da-3c94" primary="false" name="Selenarchs"/>
+        <categoryLink targetId="3d52-fccf-10c0-3fae" id="d6fb-712e-d871-64e3" primary="false" name="Infantry"/>
+        <categoryLink targetId="ef18-746a-369f-43a4" id="22c1-7a07-49b7-8a48" primary="false" name="Character"/>
+        <categoryLink targetId="84e2-9fa9-ebe6-1d18" id="5020-039b-7511-2eb6" primary="false" name="Faction: Imperium"/>
+        <categoryLink targetId="c7b7-edbc-bc14-6238" id="4b33-d65c-28b8-8b63" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="0fcf-9239-bfb9-d89d" id="7397-269a-2ecc-ec2c" primary="false" name="Chapter Master"/>
+      </categoryLinks>
       <costs>
-        <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
-        <cost name="pts" typeId="points" value="0"/>
+        <cost name="pts" typeId="points" value="140"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="7"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
       </costs>
-    </selectionEntry>
-    <selectionEntry type="model" import="true" name="Lord Commander Lavrentios" hidden="false" id="b390-6836-35c1-4bc2" collective="false">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="equalTo" value="0" field="selections" scope="force" childId="295f-891f-5130-db53" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="0572-6bd4-3584-ff27" shared="true" childName="Selenarchs" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="21e9-851c-5d33-6d0a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-      </constraints>
-      <infoLinks>
-        <infoLink name="Angels of Death" id="2dcc-d027-f595-6ffe" hidden="false" targetId="01a4-bec8-b573-fde7" type="rule"/>
-        <infoLink name="Lavrentios" id="7cf1-7c01-e446-15f7" hidden="false" targetId="38b9-304e-7d84-40ab" type="profile"/>
-        <infoLink name="Iron Halo" id="f1f8-20b1-bcf4-91e3" hidden="false" targetId="8b23-5ec0-f600-e32b" type="profile"/>
-        <infoLink name="High King of the Forlorn Moon" id="bb74-cf06-c685-4c49" hidden="false" targetId="2d20-7ff7-2cd8-c81a" type="profile"/>
-        <infoLink name="Phoenix Lord&apos;s Claw and Talon" id="dc2c-4815-845c-a518" hidden="false" targetId="6211-425f-723f-a1da" type="profile"/>
-        <infoLink name="Teleport Strike" id="c9ab-5994-b59a-62be" hidden="false" targetId="ddf2-4f55-c7b0-c210" type="profile"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="d02c-df18-7ca7-4d51" targetId="c7b7-edbc-bc14-6238" primary="false"/>
-        <categoryLink name="Chapter Master" hidden="false" id="2457-65e6-baac-af2c" targetId="0fcf-9239-bfb9-d89d" primary="false"/>
-        <categoryLink name="Character" hidden="false" id="98a2-c27b-0e47-78de" targetId="ef18-746a-369f-43a4" primary="false"/>
-        <categoryLink name="Faction: Imperium" hidden="false" id="bcb3-8ce9-5136-42b7" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
-        <categoryLink name="Infantry" hidden="false" id="2078-82ae-c4a8-3d62" targetId="3d52-fccf-10c0-3fae" primary="false"/>
-        <categoryLink name="Terminator" hidden="false" id="2009-d1fe-f18c-61f5" targetId="abb0-a38c-f9a6-aeb5" primary="false"/>
-        <categoryLink name="HQ" hidden="false" id="0529-40e7-b2d8-aeb1" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
-        <categoryLink targetId="20fc-e9d1-79b1-c62a" id="cbb1-8760-7470-d018" primary="false" name="Selenarchs"/>
-        <categoryLink targetId="0cbc-6d9d-485b-ede7" id="8bf7-2503-d03e-1c8d" primary="false" name="Lord Commander Lavrentios"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink import="true" name="Aegisthus " hidden="false" id="c98f-632c-65ff-5e5f" collective="false" targetId="d79f-17b7-21fc-43a7" type="selectionEntry">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="060d-6dab-9078-96f0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e4b-df7a-2563-6df9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Plasma blaster" hidden="false" id="4bb0-80bf-859c-5054" collective="false" targetId="5aaf-d2e4-ec59-0407" type="selectionEntry">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="113d-1be9-6564-8385" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c62-2805-7b22-33b9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Warlord" hidden="false" id="21e1-0128-ca00-96f3" collective="false" targetId="ee33-18fd-7317-1171" type="selectionEntry"/>
-        <entryLink import="true" name="Warlord Traits" hidden="false" id="bcef-99a5-e6f2-e1d2" collective="false" targetId="f000-b6a8-62f1-ebcc" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="135"/>
-        <cost name=" PL" typeId="e356-c769-5920-6e14" value="10"/>
-        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Aegisthus " hidden="false" id="d79f-17b7-21fc-43a7" page="">
-      <profiles>
-        <profile name="Aegisthus " typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="79ee-b2f8-6913-eabb">
-          <characteristics>
-            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
-            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-            <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
-            <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
-            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+1</characteristic>
-            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, invulnerable saving throws cannot be taken against that attack.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -10400,6 +10352,13 @@ In addition, when a Psychic test or Deny the Witch test is taken for a PSYKER mo
           </costs>
         </selectionEntry>
         <selectionEntry id="c69c-7257-122e-9b05" name="Red Hunters" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="pts" typeId="points" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0572-6bd4-3584-ff27" name="Selenarchs" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
@@ -13296,67 +13255,43 @@ In addition, when a Psychic test or Deny the Witch test is taken for a PSYKER mo
         <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Before this model moves in your Movement phase, you can declare it will hover. Its Move characteristic becomes 20&quot; until the end of the phase, and it loses the Airborne, Colossal Flyer and Supersonic abilities until the beginning of your next Movement phase.</characteristic>
       </characteristics>
     </profile>
-    <profile name="High King of the Forlorn Moon" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="2d20-7ff7-2cd8-c81a">
-      <characteristics>
-        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">You can re-roll failed hit rolls for friendly SELENARCHS units within 6&quot; of Lord Commander Lavrentios.</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Lavrentios" typeId="800f-21d0-4387-c943" typeName="Unit" hidden="false" id="38b9-304e-7d84-40ab">
-      <characteristics>
-        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
-        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
-        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
-        <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
-        <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
-        <characteristic name="W" typeId="f330-5e6e-4110-0978">6</characteristic>
-        <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">5</characteristic>
-        <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
-        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Phoenix Lord&apos;s Claw and Talon" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="6211-425f-723f-a1da">
+    <profile name="Great King of the Moon Lords" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="4253-d52b-1cce-b6cb">
       <characteristics>
         <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">All friendly SELENARCHS within 6&quot; of this model that are within Engagement Range of any enemy units at the start of the Fight phase fight first that phase.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Talons of the Phoenix" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="1b4d-26c7-bbe0-b7fc">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a friendly SELENARCHS unit makes a melee attack, if that models unit made a charge move, was charged or performed a Heroic Intervention this turn, add 1 to the Attacks characteristic of that attack.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lavrentios" typeId="800f-21d0-4387-c943" typeName="Unit" hidden="false" id="7fe9-e294-1e3f-cb23">
+      <characteristics>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2+</characteristic>
+        <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
+        <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
+        <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
+        <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+        <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Aegisthus " typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="7cb2-221a-1eeb-dc14">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+        <characteristic name="S" typeId="59b1-319e-ec13-d466">+2</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, invulnerable saving throws cannot be taken against that attack.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Chapter Master (Selenarchs)" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="2ca2-7263-174b-a42d">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">You can re-roll any failed hit rolls from friendly SELENARCHS units within 6&quot; of this model.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
-  <entryLinks>
-    <entryLink import="true" name="Medusan Hammer" hidden="false" id="9575-86b2-3e53-bc5f" collective="false" targetId="34ab-9d80-d8d2-ca3e" type="selectionEntry">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e94a-b1e0-c79f-995d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e5f4-9eed-08cb-330b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-      </constraints>
-    </entryLink>
-    <entryLink import="true" name="Warlord" hidden="false" id="ee08-6fb6-7d52-d0f3" collective="false" targetId="ee33-18fd-7317-1171" type="selectionEntry"/>
-    <entryLink import="true" name="Warlord Traits" hidden="false" id="e246-9425-f39c-85c5" collective="false" targetId="f000-b6a8-62f1-ebcc" type="selectionEntryGroup"/>
-    <entryLink import="true" name="Hunger" hidden="false" id="e572-dea0-6544-792c" collective="false" targetId="adf8-b3eb-91cf-fd5c" type="selectionEntry">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98c3-81e9-4c6c-fedb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9194-a04d-e0e2-eb67" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-      </constraints>
-    </entryLink>
-    <entryLink import="true" name="Slake" hidden="false" id="4f65-c027-4a8f-d948" collective="false" targetId="daad-40ce-b8f1-3598" type="selectionEntry">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a1f-3541-c39c-6b55" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="47bb-4c62-141f-0045" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-      </constraints>
-    </entryLink>
-    <entryLink import="true" name="Warlord" hidden="false" id="c72b-1c48-a81c-5664" collective="false" targetId="ee33-18fd-7317-1171" type="selectionEntry"/>
-    <entryLink import="true" name="Warlord Traits" hidden="false" id="56ec-a177-3b69-0410" collective="false" targetId="f000-b6a8-62f1-ebcc" type="selectionEntryGroup"/>
-  </entryLinks>
-  <infoLinks>
-    <infoLink name="Blessing of the Omnissiah (Sons of Medusa)" id="8cc4-5b6a-14e7-72a2" hidden="false" targetId="fbfa-4b16-86f2-4591" type="profile"/>
-    <infoLink name="Iron Halo" id="b865-4da0-f27c-9246" hidden="false" targetId="588f-5e6f-ec33-e96e" type="profile"/>
-    <infoLink name="Purge the Weak" id="4594-3da1-9fd9-c3c4" hidden="false" targetId="ecd9-9262-cd39-9c03" type="profile"/>
-    <infoLink name="Vaylund Cal" id="372e-14cc-6573-4f0f" hidden="false" targetId="2bfe-c3df-5600-2e85" type="profile"/>
-    <infoLink name="Angels of Death" id="7c5a-7f64-ef76-ab48" hidden="false" targetId="01a4-bec8-b573-fde7" type="rule"/>
-    <infoLink name="Ancient Armour" id="8aee-5f36-2416-f485" hidden="false" targetId="4049-f9d5-d66e-b8a9" type="profile"/>
-    <infoLink name="Lord Reaper of the Void" id="1cac-08b8-b7e4-f663" hidden="false" targetId="20b7-80bb-7f02-6a90" type="profile"/>
-    <infoLink name="Savagery beyond Reason" id="cf74-5d27-5a76-ede5" hidden="false" targetId="076b-68f9-2b44-a02d" type="profile"/>
-    <infoLink name="Teleport Strike" id="9bdb-1726-0038-1cb0" hidden="false" targetId="ddf2-4f55-c7b0-c210" type="profile"/>
-    <infoLink name="Tyberos" id="e11a-9936-bd76-08a6" hidden="false" targetId="0bc6-8140-22ad-6d55" type="profile"/>
-    <infoLink name="Angels of Death" id="a21e-595a-d57b-3069" hidden="false" targetId="01a4-bec8-b573-fde7" type="rule"/>
-    <infoLink name="High King of the Forlorn Moon" id="279d-52a6-e5ee-b1b5" hidden="false" type="profile" targetId="2d20-7ff7-2cd8-c81a"/>
-    <infoLink name="Phoenix Lord&apos;s Claw and Talon" id="bb96-5828-817c-62f9" hidden="false" type="profile" targetId="6211-425f-723f-a1da"/>
-  </infoLinks>
 </catalogue>
