@@ -140,7 +140,7 @@
     <categoryEntry id="2f2f-03e8-ef0f-150c" name="Relic Sicaran Arcus Strike Tank" hidden="false"/>
     <categoryEntry id="e6f5-3320-3a2a-15f5" name="Termite Assault Drill" hidden="false"/>
     <categoryEntry name="Lord Commander Lavrentios" id="2ae3-377d-74f4-fd96" hidden="false"/>
-    <categoryEntry name="Selenarchs" id="3e2e-6285-00ae-c65a" hidden="false" page=""/>
+    <categoryEntry name="Selenarchs" id="3e2e-6285-00ae-c65a" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry id="b048-66f2-3f07-e5ec" name="Deimos Pattern Relic Predator" publicationId="0cc2-3545-pubN96526" page="7" hidden="false" collective="false" import="true" type="model">
@@ -9332,6 +9332,7 @@
         <infoLink name="Talons of the Phoenix" id="a1c2-eaf6-7a69-2ec1" hidden="false" type="profile" targetId="1b4d-26c7-bbe0-b7fc"/>
         <infoLink name="Teleport Strike" id="6561-5a8c-e373-b311" hidden="false" type="profile" targetId="ddf2-4f55-c7b0-c210"/>
         <infoLink name="Angels of Death" id="1202-1d97-8997-ec53" hidden="false" type="rule" targetId="01a4-bec8-b573-fde7"/>
+        <infoLink name="Lavrentios" id="4564-5d1e-2ceb-cc63" hidden="false" type="profile" targetId="7fe9-e294-1e3f-cb23"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" id="6e63-f9a1-5e61-8285" primary="true" name="HQ"/>
@@ -9343,7 +9344,7 @@
         <categoryLink targetId="0fcf-9239-bfb9-d89d" id="7397-269a-2ecc-ec2c" primary="false" name="Chapter Master"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="140"/>
+        <cost name="pts" typeId="points" value="124"/>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="7"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
       </costs>
@@ -13275,10 +13276,10 @@ In addition, when a Psychic test or Deny the Witch test is taken for a PSYKER mo
       <characteristics>
         <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
         <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
-        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">2+</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
         <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
         <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
-        <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
+        <characteristic name="W" typeId="f330-5e6e-4110-0978">6</characteristic>
         <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
@@ -13289,9 +13290,9 @@ In addition, when a Psychic test or Deny the Witch test is taken for a PSYKER mo
         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">+2</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, invulnerable saving throws cannot be taken against that attack.</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, an unmodified wound roll of 6 inflicts 1 mortal wound on the target in addition to any normal damage.</characteristic>
       </characteristics>
     </profile>
     <profile name="Chapter Master (Selenarchs)" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="2ca2-7263-174b-a42d">
