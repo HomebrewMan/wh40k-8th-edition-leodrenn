@@ -1195,7 +1195,12 @@
         <categoryLink id="26e6-243d-d4bf-f834" name="No Force Org Slot" hidden="false" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Lord Commander Lavrentios" hidden="false" id="8c1f-692b-52c9-3fcf" type="selectionEntry" targetId="1b1b-5caa-a5aa-8fcb"/>
+    <entryLink import="true" name="Lord Commander Lavrentios" hidden="false" id="8c1f-692b-52c9-3fcf" type="selectionEntry" targetId="1b1b-5caa-a5aa-8fcb">
+      <entryLinks>
+        <entryLink import="true" name="Stratagem: Hero of the Chapter" hidden="false" id="35e8-4970-5c63-e72a" type="selectionEntry" targetId="5efd-6285-c9f7-2a5a"/>
+        <entryLink import="true" name="Warlord Traits" hidden="false" id="f3fa-b16d-52ca-6bc6" type="selectionEntryGroup" targetId="4f55-3af3-89ff-791e"/>
+      </entryLinks>
+    </entryLink>
   </entryLinks>
   <infoLinks>
     <infoLink id="69aa-c5f2-5b03-a0f4" name="Bolter Discipline" hidden="false" targetId="5a7e-f984-487c-d767" type="rule"/>

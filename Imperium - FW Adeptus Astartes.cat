@@ -9307,7 +9307,7 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lord Commander Lavrentios" hidden="false" id="1b1b-5caa-a5aa-8fcb">
       <entryLinks>
-        <entryLink import="true" name="Aegisthus" hidden="false" id="044b-1c80-270a-0c6a" type="selectionEntry" targetId="8e54-a61c-8b52-ee54">
+        <entryLink import="true" name="Aegisthus" hidden="false" id="044b-1c80-270a-0c6a" type="selectionEntry" targetId="8e54-a61c-8b52-ee54" sortIndex="1">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80d2-d466-1e8f-d4c1" includeChildSelections="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="40aa-1e27-4817-2f01" includeChildSelections="false"/>
@@ -9315,7 +9315,7 @@
         </entryLink>
         <entryLink import="true" name="Warlord" hidden="false" id="223c-9ba8-eb8b-f594" type="selectionEntry" targetId="ee33-18fd-7317-1171"/>
         <entryLink import="true" name="Warlord Traits" hidden="false" id="2102-30d8-7451-3143" type="selectionEntryGroup" targetId="f000-b6a8-62f1-ebcc"/>
-        <entryLink import="true" name="Combi-plasma" hidden="false" id="a913-b278-213c-40ff" type="selectionEntry" targetId="fdce-cdf7-21a9-f9ac">
+        <entryLink import="true" name="Combi-plasma" hidden="false" id="a913-b278-213c-40ff" type="selectionEntry" targetId="fdce-cdf7-21a9-f9ac" sortIndex="2">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de9a-f65c-fd40-169b" includeChildSelections="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff5e-6cfc-6ff9-f43f" includeChildSelections="false"/>
