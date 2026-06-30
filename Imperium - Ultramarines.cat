@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8ee4-7c15-d304-4d83" name="Imperium - Adeptus Astartes - Ultramarines" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="5335-9d49-c85e-4817" gameSystemRevision="130" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="8ee4-7c15-d304-4d83" name="Imperium - Adeptus Astartes - Ultramarines" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="5335-9d49-c85e-4817" gameSystemRevision="130" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="f24f-c59b-5c04-a39a" name="Captain Sicarius" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -2925,7 +2925,45 @@
         <categoryLink id="abc0-e731-5a8e-ee58" name="No Force Org Slot" hidden="false" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Lord Commander Lavrentios" hidden="false" id="50ba-04bb-c7bc-2e06" type="selectionEntry" targetId="1b1b-5caa-a5aa-8fcb"/>
+    <entryLink import="true" name="Lord Commander Lavrentios" hidden="false" id="50ba-04bb-c7bc-2e06" type="selectionEntry" targetId="1b1b-5caa-a5aa-8fcb">
+      <entryLinks>
+        <entryLink import="true" name="Stratagem: Hero of the Chapter" hidden="false" id="e5ac-b419-de3d-ec94" type="selectionEntry" targetId="5efd-6285-c9f7-2a5a"/>
+        <entryLink import="true" name="Warlord Traits" hidden="false" id="83ef-c678-b7f5-1c7f" type="selectionEntryGroup" targetId="4f55-3af3-89ff-791e"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="0572-6bd4-3584-ff27" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Selenarchs"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Maolmhuire the Carrion King" hidden="false" id="7425-f189-dc4b-5eee" type="selectionEntry" targetId="5018-cad4-9a32-6b91">
+      <entryLinks>
+        <entryLink import="true" name="Stratagem: Hero of the Chapter" hidden="false" id="61ac-e29b-60c1-df4b" type="selectionEntry" targetId="5efd-6285-c9f7-2a5a"/>
+        <entryLink import="true" name="Warlord Traits" hidden="false" id="982c-d673-6523-304f" type="selectionEntryGroup" targetId="4f55-3af3-89ff-791e"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="fe5a-dc3b-c07d-e791" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Carrion Reapers"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Kyrin Kaed the Shadowed One" hidden="false" id="914f-1f78-4848-85ec" type="selectionEntry" targetId="9a27-a37e-5c0b-cce4">
+      <entryLinks>
+        <entryLink import="true" name="Warlord Traits" hidden="false" id="1efb-3a68-ad1c-16f4" collective="false" targetId="4f55-3af3-89ff-791e" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Stratagem: Hero of the Chapter" hidden="false" id="9da9-d5f5-8be5-dde2" collective="false" targetId="5efd-6285-c9f7-2a5a" type="selectionEntry"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="a53b-49d1-15fe-63da" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Ash Vultures"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="8db4-4a27-1367-cfa5" name="Chapter Relics" hidden="true" collective="false" import="true">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2f48-7854-3ae0-c1d6" name="Imperium - FW Adeptus Astartes" revision="67" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="true" gameSystemId="5335-9d49-c85e-4817" gameSystemRevision="130" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="2f48-7854-3ae0-c1d6" name="Imperium - FW Adeptus Astartes" revision="68" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="true" gameSystemId="5335-9d49-c85e-4817" gameSystemRevision="130" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="dab7-e076-pubN133616" name="Codex: Space Wolves"/>
     <publication id="dab7-e076-pubN151451" name="Astraeus Super-heavy Tank PDF"/>
@@ -141,6 +141,9 @@
     <categoryEntry id="e6f5-3320-3a2a-15f5" name="Termite Assault Drill" hidden="false"/>
     <categoryEntry name="Lord Commander Lavrentios" id="2ae3-377d-74f4-fd96" hidden="false"/>
     <categoryEntry name="Selenarchs" id="3e2e-6285-00ae-c65a" hidden="false"/>
+    <categoryEntry name="Carrion Reapers" id="e430-e6b6-4e1d-4180" hidden="false"/>
+    <categoryEntry name="Maolmhuire the Carrion King" id="a9ba-ba72-803d-a59f" hidden="false"/>
+    <categoryEntry name="Ash Vultures" id="7913-4129-0eec-5ef9" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry id="b048-66f2-3f07-e5ec" name="Deimos Pattern Relic Predator" publicationId="0cc2-3545-pubN96526" page="7" hidden="false" collective="false" import="true" type="model">
@@ -9320,6 +9323,9 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de9a-f65c-fd40-169b" includeChildSelections="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff5e-6cfc-6ff9-f43f" includeChildSelections="false"/>
           </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+          </costs>
         </entryLink>
       </entryLinks>
       <constraints>
@@ -9344,7 +9350,7 @@
         <categoryLink targetId="0fcf-9239-bfb9-d89d" id="7397-269a-2ecc-ec2c" primary="false" name="Chapter Master"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="124"/>
+        <cost name="pts" typeId="points" value="135"/>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="7"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
       </costs>
@@ -9355,6 +9361,111 @@
           </conditions>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Maolmhuire the Carrion King" hidden="false" id="5018-cad4-9a32-6b91">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="The Wicked Implement" hidden="false" id="eaa4-45e2-e97e-0a62">
+          <infoLinks>
+            <infoLink name="The Wicked Implement - Reaping blow" id="dd0d-54a6-55ba-88b8" hidden="false" type="profile" targetId="1ebe-40b1-a0cc-707d"/>
+            <infoLink name="The Wicked Implement - Soul Haunt" id="b31c-6b8b-a77c-da81" hidden="false" type="profile" targetId="19ea-9b96-17db-76aa"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d5f4-b047-659b-753d" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a933-1026-cc1f-13ea" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Combi-melta" hidden="false" id="2d01-01ca-cbe2-0e22" type="selectionEntry" targetId="ceff-c4db-97de-b80f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2490-55d4-04a8-5171" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fc6b-c341-ad9c-3e0d" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Warlord" hidden="false" id="a90c-abdf-65d7-d4b7" type="selectionEntry" targetId="ee33-18fd-7317-1171"/>
+        <entryLink import="true" name="Warlord Traits" hidden="false" id="5359-da4c-94d3-9ab5" type="selectionEntryGroup" targetId="f000-b6a8-62f1-ebcc"/>
+        <entryLink import="true" name="Krak grenade" hidden="false" id="d08a-5e20-4256-eba3" type="selectionEntry" targetId="2bd3-5f85-6fc6-3f3a">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f736-53fb-a6d9-85d4" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5b69-76df-3b6b-ae2d" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ed53-7bec-d436-b1ef" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Iron Halo" id="7204-9ead-300a-4aa9" hidden="false" type="profile" targetId="588f-5e6f-ec33-e96e"/>
+        <infoLink name="The Harbinger of the Ebon Harvest" id="e122-c694-d5db-ceaf" hidden="false" type="profile" targetId="2692-0af7-cf8f-f38a"/>
+        <infoLink name="The Crow Lord of Morghast" id="027a-059f-3321-5c0f" hidden="false" type="profile" targetId="8f44-5374-2e19-c415"/>
+        <infoLink name="Chapter Master (Carrion Reapers)" id="5ccf-fd25-bdae-4582" hidden="false" type="profile" targetId="ad1c-1d99-8d0f-518e"/>
+        <infoLink name="Angels of Death" id="0935-5b03-ee32-b13a" hidden="false" type="rule" targetId="01a4-bec8-b573-fde7"/>
+        <infoLink name="Maolmhuire" id="e761-5943-5a73-acc7" hidden="false" type="profile" targetId="5a41-9b2a-a181-5f19"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="135"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="10"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" id="5401-70d8-69d0-b0fc" primary="true" name="HQ"/>
+        <categoryLink targetId="3d52-fccf-10c0-3fae" id="1290-d764-1dea-01dd" primary="false" name="Infantry"/>
+        <categoryLink targetId="ef18-746a-369f-43a4" id="16f9-7e51-0951-99de" primary="false" name="Character"/>
+        <categoryLink targetId="84e2-9fa9-ebe6-1d18" id="c7c7-49d0-a645-94d7" primary="false" name="Faction: Imperium"/>
+        <categoryLink targetId="c7b7-edbc-bc14-6238" id="c9de-4c03-8486-d1c9" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="0fcf-9239-bfb9-d89d" id="9aa3-184c-a4ec-5373" primary="false" name="Chapter Master"/>
+        <categoryLink targetId="e430-e6b6-4e1d-4180" id="f156-92b0-87db-2100" primary="false" name="Carrion Reapers"/>
+        <categoryLink targetId="a9ba-ba72-803d-a59f" id="57d5-bd9f-e38b-7b10" primary="false" name="Maolmhuire the Carrion King"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Kyrin Kaed the Shadowed One" hidden="false" id="9a27-a37e-5c0b-cce4">
+      <entryLinks>
+        <entryLink import="true" name="The Crimson Talons" hidden="false" id="27b4-8b98-e91a-17e9" type="selectionEntry" targetId="4470-8547-87fd-eded" sortIndex="1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a835-b889-072c-9e3a" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d1e7-6c01-43a0-3ec9" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Plasma pistol" hidden="false" id="af4a-4d4a-b99d-e16f" type="selectionEntry" targetId="83be-1ba9-c326-4760" sortIndex="2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2054-bc11-7c5a-b529" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8eda-51dd-5878-211e" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="140"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b08-235f-9e43-50e7" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Chapter Master (Ash Vultures)" id="e02c-14ea-87d4-cb78" hidden="false" type="profile" targetId="7630-d95f-866b-93b6"/>
+        <infoLink name="Death Grasp" id="abf2-df21-4d59-5b2b" hidden="false" type="profile" targetId="1547-52ec-103e-7432"/>
+        <infoLink name="Manhunter" id="b215-314f-edce-e194" hidden="false" type="profile" targetId="32de-3ab3-f244-0ca9"/>
+        <infoLink name="Iron Halo" id="83ca-df27-b62d-359c" hidden="false" type="profile" targetId="8b23-5ec0-f600-e32b"/>
+        <infoLink name="Angels of Death" id="8157-a544-edfa-7f7e" hidden="false" targetId="01a4-bec8-b573-fde7" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="a53b-49d1-15fe-63da" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Ash Vultures"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Crimson Talons" hidden="false" id="4470-8547-87fd-eded">
+      <infoLinks>
+        <infoLink name="The Crimson Talon" id="b3ba-8ab6-94b6-fb32" hidden="false" type="profile" targetId="45b3-5142-4123-c939"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -10372,6 +10483,14 @@ In addition, when a Psychic test or Deny the Witch test is taken for a PSYKER mo
             <cost name="pts" typeId="points" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="fe5a-dc3b-c07d-e791" name="Carrion Reapers" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+            <cost name="pts" typeId="points" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ash Vultures" hidden="false" id="a53b-49d1-15fe-63da"/>
       </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
@@ -13280,7 +13399,7 @@ In addition, when a Psychic test or Deny the Witch test is taken for a PSYKER mo
         <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
         <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
         <characteristic name="W" typeId="f330-5e6e-4110-0978">6</characteristic>
-        <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+        <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">5</characteristic>
         <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
       </characteristics>
@@ -13298,6 +13417,92 @@ In addition, when a Psychic test or Deny the Witch test is taken for a PSYKER mo
     <profile name="Chapter Master (Selenarchs)" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="2ca2-7263-174b-a42d">
       <characteristics>
         <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">You can re-roll any failed hit rolls from friendly SELENARCHS units within 6&quot; of this model.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="The Wicked Implement - Reaping blow" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="1ebe-40b1-a0cc-707d">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+        <characteristic name="S" typeId="59b1-319e-ec13-d466">+2</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">You can re-roll failed wound rolls with this weapon.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="The Wicked Implement - Soul Haunt" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="19ea-9b96-17db-76aa">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+        <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
+        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this profile, if the wound roll is successful, the target suffers 1 mortal wound.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Chapter Master (Carrion Reapers)" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="ad1c-1d99-8d0f-518e">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">You can re-roll any failed hit rolls from friendly CARRION REAPERS units within 6&quot; of this model.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="The Harbinger of the Ebon Harvest" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="2692-0af7-cf8f-f38a">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a friendly CARRION REAPERS within 6&quot; of this model made an melee attack, an unmodified wound roll of 6 inflicts 1 mortal wound on the target in addition to any normal damage.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="The Crow Lord of Morghast" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="8f44-5374-2e19-c415">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time an attack with an Armour Penetration characteristic of -1 or -2 is allocated to the bearer, that attack has an Armour Penetration characteristic of 0 instead.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Maolmhuire" typeId="800f-21d0-4387-c943" typeName="Unit" hidden="false" id="5a41-9b2a-a181-5f19">
+      <characteristics>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+        <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
+        <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
+        <characteristic name="W" typeId="f330-5e6e-4110-0978">6</characteristic>
+        <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
+        <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Death Grasp" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="1547-52ec-103e-7432">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">When resolving an attack made with this weapon against a CHARACTER unit, this weapon has a Damage characteristic of 3. In addition, Once per Fight phase, after rolling a hit roll of 6+ for this weapon, KYRIN KAED may choose to disembowel his foe with his talons. You may choose to tear the innards free of your opponent – inflicting D3+3 mortal wounds on the target in addition to the normal damage. This ability can only be used once per game.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Manhunter" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="32de-3ab3-f244-0ca9">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">You can re-roll charge rolls made for ASH VULTURES JUMP PACK and ASH VULTURES TERMINATORS units if they are within 6&quot; of this model when the roll is made. Enemy units cannot fire Overwatch at this model. </characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Chapter Master (Ash Vultures)" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="7630-d95f-866b-93b6">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">You can re-roll failed hit rolls for friendly ASH VULTURES units within 6&quot; of Kyrin Kaed.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="The Crimson Talon" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="45b3-5142-4123-c939">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+        <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, if a hit is scored, roll 2D6. If the result is greater than the Leadership characteristic of the target, the target suffers 1 mortal wound. See Death Grasp above.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Kyrin Kaed" typeId="800f-21d0-4387-c943" typeName="Unit" hidden="false" id="1d54-e9f6-ca12-07ca">
+      <characteristics>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">2+</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+        <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
+        <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
+        <characteristic name="W" typeId="f330-5e6e-4110-0978">6</characteristic>
+        <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">5</characteristic>
+        <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9+</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

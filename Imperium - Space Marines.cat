@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b206-a14d-f9ef-1479" name="Imperium - Space Marines" revision="150" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="true" gameSystemId="5335-9d49-c85e-4817" gameSystemRevision="130" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="b206-a14d-f9ef-1479" name="Imperium - Space Marines" revision="152" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="true" gameSystemId="5335-9d49-c85e-4817" gameSystemRevision="130" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="846d-3c14-pubN65537" name="Index: Imperium 1 &amp; Codex: Space Marines"/>
   </publications>
@@ -1199,6 +1199,32 @@
       <entryLinks>
         <entryLink import="true" name="Stratagem: Hero of the Chapter" hidden="false" id="35e8-4970-5c63-e72a" type="selectionEntry" targetId="5efd-6285-c9f7-2a5a"/>
         <entryLink import="true" name="Warlord Traits" hidden="false" id="f3fa-b16d-52ca-6bc6" type="selectionEntryGroup" targetId="4f55-3af3-89ff-791e"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink import="true" name="Maolmhuire the Carrion King" hidden="false" id="2d08-75cf-0781-e89f" type="selectionEntry" targetId="5018-cad4-9a32-6b91">
+      <entryLinks>
+        <entryLink import="true" name="Stratagem: Hero of the Chapter" hidden="false" id="acf3-1292-9e39-f232" type="selectionEntry" targetId="5efd-6285-c9f7-2a5a"/>
+        <entryLink import="true" name="Warlord Traits" hidden="false" id="a91a-740a-2883-7fdd" type="selectionEntryGroup" targetId="4f55-3af3-89ff-791e"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="fe5a-dc3b-c07d-e791" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Carrion Reapers"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Kyrin Kaed the Shadowed One" hidden="false" id="6677-9427-37b3-31ed" type="selectionEntry" targetId="9a27-a37e-5c0b-cce4">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="a53b-49d1-15fe-63da" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Ash Vultures"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Stratagem: Hero of the Chapter" hidden="false" id="72ef-80f0-eb89-f983" collective="false" targetId="5efd-6285-c9f7-2a5a" type="selectionEntry"/>
+        <entryLink import="true" name="Warlord Traits" hidden="false" id="0582-d516-decc-6ecc" collective="false" targetId="4f55-3af3-89ff-791e" type="selectionEntryGroup"/>
       </entryLinks>
     </entryLink>
   </entryLinks>
