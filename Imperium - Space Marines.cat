@@ -1213,6 +1213,14 @@
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" id="9da8-f011-0492-dd04" primary="false" name="HQ"/>
+        <categoryLink targetId="3d52-fccf-10c0-3fae" id="d80a-2ae7-c3e7-2593" primary="false" name="Infantry"/>
+        <categoryLink targetId="e430-e6b6-4e1d-4180" id="4369-b173-71e8-fafb" primary="false" name="Carrion Reapers"/>
+        <categoryLink targetId="a9ba-ba72-803d-a59f" id="7f6b-a401-6f35-3183" primary="false" name="Maolmhuire the Carrion King"/>
+        <categoryLink targetId="c7b7-edbc-bc14-6238" id="b806-2dfb-f67a-f088" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="84e2-9fa9-ebe6-1d18" id="4e10-3437-58cf-1228" primary="false" name="Imperium"/>
+      </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Kyrin Kaed the Shadowed One" hidden="false" id="6677-9427-37b3-31ed" type="selectionEntry" targetId="9a27-a37e-5c0b-cce4">
       <modifiers>

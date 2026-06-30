@@ -9461,6 +9461,15 @@
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" id="588c-83e9-9238-769a" primary="true" name="HQ"/>
+        <categoryLink targetId="3d52-fccf-10c0-3fae" id="2e28-4528-9652-a5f2" primary="false" name="Infantry"/>
+        <categoryLink targetId="ef18-746a-369f-43a4" id="1bd8-410f-0c9f-2bb6" primary="false" name="Character"/>
+        <categoryLink targetId="84e2-9fa9-ebe6-1d18" id="3fb5-6481-5231-2bbb" primary="false" name="Faction: Imperium"/>
+        <categoryLink targetId="c7b7-edbc-bc14-6238" id="696c-34c4-8a42-94f0" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="0fcf-9239-bfb9-d89d" id="a350-2f46-06ec-6805" primary="false" name="Chapter Master"/>
+        <categoryLink targetId="7913-4129-0eec-5ef9" id="a679-8942-88c6-a09e" primary="false" name="Ash Vultures"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="The Crimson Talons" hidden="false" id="4470-8547-87fd-eded">
       <infoLinks>
