@@ -9438,6 +9438,8 @@
             <cost name="pts" typeId="points" value="0"/>
           </costs>
         </entryLink>
+        <entryLink import="true" name="Warlord" hidden="false" id="c81d-23f8-25ad-333f" collective="false" targetId="ee33-18fd-7317-1171" type="selectionEntry"/>
+        <entryLink import="true" name="Warlord Traits" hidden="false" id="a75e-8102-f5c2-31c7" collective="false" targetId="f000-b6a8-62f1-ebcc" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="140"/>
